@@ -9,8 +9,8 @@ class Ball {
     constructor(x, y) {
         this.baseR = 10
         this.r = this.baseR;
-        this.x = x || randomIntFromInterval(0 + this.r,window.innerWidth - this.r)
-        this.y = y || randomIntFromInterval(0 + this.r,window.innerHeight - this.r)
+        this.x = x || randomIntFromInterval(0 + this.r, window.innerWidth - this.r)
+        this.y = y || randomIntFromInterval(0 + this.r, window.innerHeight - this.r)
         this.vx = (Math.random() - 0.5) * 4
         this.vy = (Math.random() - 0.5) * 4
         this.draw()
@@ -71,9 +71,9 @@ window.addEventListener('mousemove', function (e) {
     })
 })
 
-window.addEventListener('resize',function(){
-    canvas.width=this.window.innerWidth
-    canvas.height=this.window.innerHeight
+window.addEventListener('resize', function () {
+    canvas.width = this.window.innerWidth
+    canvas.height = this.window.innerHeight
 })
 
 animate()
